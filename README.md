@@ -199,11 +199,16 @@ Kami sangat menghargai kontribusi dari komunitas! Berikut cara berkontribusi:
 
 ---
 
+## 📄 License
+
+Proyek ini dilisensikan di bawah **MIT License**. Lihat [MIT license](https://opensource.org/licenses/MIT). untuk detail lengkap.
+
+---
 
 ## 👥 Tim Pengembang
 
 <p align="center">
-  <strong>Dikembangkan dengan ❤️ untuk kemajuan pertanian Indonesia</strong>
+  <strong>Dikembangkan oleh Komang Mahendra</strong>
 </p>
 
 <p align="center">
