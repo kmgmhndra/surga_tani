@@ -199,11 +199,6 @@ Kami sangat menghargai kontribusi dari komunitas! Berikut cara berkontribusi:
 
 ---
 
-## 📄 License
-
-Proyek ini dilisensikan di bawah **MIT License**. Lihat [LICENSE](LICENSE) untuk detail lengkap.
-
----
 
 ## 👥 Tim Pengembang
 
@@ -212,10 +207,10 @@ Proyek ini dilisensikan di bawah **MIT License**. Lihat [LICENSE](LICENSE) untuk
 </p>
 
 <p align="center">
-  <a href="https://github.com/[username]">
+  <a href="https://github.com/kmgmhndra">
     <img src="https://img.shields.io/badge/GitHub-Follow-black?style=social&logo=github" alt="GitHub">
   </a>
-  <a href="mailto:contact@example.com">
+  <a href="mailto:komangmahendra003@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-red?style=social&logo=gmail" alt="Email">
   </a>
 </p>
