@@ -1,133 +1,227 @@
-SURGA TANI (Survei Harga Pertanian)
+# 🌾 SURGA TANI
+### *Survei Harga Pertanian - Smart Agricultural Price Survey*
+
 <p align="center">
-<img src="https://img.shields.io/badge/platform-Android%20%7C%20iOS-brightgreen.svg" alt="Platform">
-<img src="https://img.shields.io/badge/Flutter-3.x-blue.svg" alt="Flutter">
-<img src="https://img.shields.io/badge/License-MIT-blueviolet.svg" alt="License">
+  <img src="https://img.shields.io/badge/platform-Android%20%7C%20iOS-brightgreen.svg" alt="Platform">
+  <img src="https://img.shields.io/badge/Flutter-3.x-blue.svg" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-3.0+-0175C2.svg" alt="Dart">
+  <img src="https://img.shields.io/badge/License-MIT-blueviolet.svg" alt="License">
+  <img src="https://img.shields.io/badge/Status-Active-success.svg" alt="Status">
 </p>
 
-SURGA TANI adalah aplikasi mobile yang dibangun menggunakan Flutter untuk melakukan survei dan pencatatan harga komoditi pertanian. Aplikasi ini dirancang untuk petugas lapangan agar dapat dengan mudah mendokumentasikan harga di berbagai subsektor pertanian secara efisien dan akurat.
+<p align="center">
+  <strong>Aplikasi mobile Flutter untuk survei dan pencatatan harga komoditi pertanian yang efisien dan akurat</strong>
+</p>
 
-📸 Tampilan Aplikasi
-Dashboard Utama
+---
 
-Daftar Riwayat
+## 📱 Preview Aplikasi
 
-Form Input
+<p align="center">
+  <img src="screenshots/dashboard.jpg" width="250" alt="Dashboard">
+  <img src="screenshots/pencatatan.jpg" width="250" alt="Form Pencatatan">
+  <img src="screenshots/list.jpg" width="250" alt="Daftar Riwayat">
+</p>
 
+## 🎯 Tentang Proyek
 
+**SURGA TANI** adalah solusi digital yang dirancang khusus untuk petugas lapangan dalam melakukan survei harga komoditi pertanian. Aplikasi ini mengoptimalkan proses pencatatan data dengan interface yang intuitif dan fitur-fitur canggih untuk dokumentasi yang komprehensif.
 
+### 🚀 Keunggulan Utama
+- **Efisiensi Tinggi**: Interface yang dirancang untuk kecepatan input data di lapangan
+- **Fleksibilitas**: Mendukung berbagai subsektor pertanian dengan form yang adaptif
+- **Dokumentasi Visual**: Integrasi kamera untuk bukti visual yang kuat
+- **Laporan Profesional**: Export PDF dengan format standar dan lengkap
+- **Offline Ready**: Bekerja tanpa koneksi internet dengan database lokal
 
+---
 
+## ✨ Fitur Unggulan
 
+### 🎛️ **Dashboard Multi-Kategori**
+Antarmuka utama yang memberikan akses cepat ke berbagai subsektor:
+- 🌾 **Tanaman Pangan** - Padi, jagung, kedelai, dan komoditi pangan lainnya
+- 🍎 **Hortikultura** - Buah-buahan, sayuran, dan tanaman hias
+- 🐄 **Peternakan** - Ternak besar, unggas, dan produk peternakan
+- 🌴 **Perkebunan** - Kelapa sawit, karet, kopi, dan komoditi perkebunan
 
-Detail & Edit
+### 📝 **Form Input Dinamis**
+- Form yang disesuaikan untuk setiap kategori komoditi
+- Support untuk item dengan sub-kategori (khusus peternakan)
+- Validasi data real-time
+- Auto-save untuk mencegah kehilangan data
 
-Pratinjau PDF
+### ➕ **Manajemen Komoditi Fleksibel**
+- Daftar komoditi yang dapat disesuaikan
+- Kemampuan menambah item baru on-the-fly
+- Pencarian dan filter komoditi yang cepat
 
-[Gambar Halaman Edit]
+### 📷 **Dokumentasi Visual**
+- Upload multiple foto per catatan
+- Kompresi otomatis untuk optimasi storage
+- Preview gambar sebelum menyimpan
+- Watermark otomatis dengan timestamp
 
-[Gambar Pratinjau PDF]
+### 💾 **Penyimpanan Data Robust**
+- Database Hive untuk performa tinggi
+- Sinkronisasi data yang aman
+- Backup dan restore data
+- Enkripsi data sensitif
 
-✨ Fitur Utama
-🎛️ Dashboard Multi-Kategori: Antarmuka utama untuk memilih subsektor yang akan disurvei:
+### 📄 **Laporan PDF Professional**
+- Template laporan yang dapat dikustomisasi
+- Kop surat dan header resmi
+- Tanda tangan digital
+- Lampiran foto terintegrasi
+- Export batch untuk multiple records
 
-🌾 Tanaman Pangan
+---
 
-🍎 Hortikultura
+## 🛠️ Tech Stack
 
-🐄 Peternakan
+| Kategori | Teknologi |
+|----------|-----------|
+| **Framework** | Flutter 3.x |
+| **Bahasa** | Dart 3.0+ |
+| **Database** | Hive (NoSQL Local) |
+| **State Management** | Provider + StatefulWidget |
+| **PDF Generation** | pdf + printing |
+| **Image Handling** | image_picker |
+| **UI/UX** | Material Design 3 |
+| **Notifications** | top_snackbar_flutter |
+| **Icons** | flutter_launcher_icons |
+| **Internationalization** | intl |
 
-🌴 Perkebunan
+---
 
-📝 Form Input Dinamis: Setiap kategori memiliki formulir pencatatan yang dirancang khusus sesuai dengan struktur datanya, termasuk item dengan sub-item (untuk Peternakan).
+## 🚀 Quick Start
 
-➕ Daftar Komoditi Fleksibel: Pengguna dapat menambahkan item komoditi baru di luar daftar default saat melakukan pencatatan.
+### Prerequisites
+Pastikan Anda telah menginstal:
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) (versi 3.x)
+- [Dart SDK](https://dart.dev/get-dart) (versi 3.0+)
+- Android Studio atau VS Code dengan Flutter extension
+- Emulator Android/iOS atau perangkat fisik
 
-📷 Dokumentasi Foto: Kemampuan untuk mengunggah beberapa foto sebagai bukti dokumentasi untuk setiap catatan.
+### Installation
 
-💾 Penyimpanan Data Lokal: Semua data pencatatan disimpan secara aman di perangkat menggunakan database Hive yang cepat dan efisien.
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/[username]/surga_tani.git
+   cd surga_tani
+   ```
 
-📄 Cetak ke PDF: Setiap catatan dapat diekspor menjadi laporan PDF yang rapi, lengkap dengan kop, detail data, tanda tangan, dan lampiran foto.
+2. **Install Dependencies**
+   ```bash
+   flutter pub get
+   ```
 
-🎨 Ikon Aplikasi Kustom: Identitas visual yang unik untuk aplikasi SURGA TANI.
+3. **Generate Hive Adapters**
+   ```bash
+   dart run build_runner build --delete-conflicting-outputs
+   ```
 
-🛠️ Teknologi & Library yang Digunakan
-Framework: Flutter
+4. **Run Application**
+   ```bash
+   flutter run
+   ```
 
-Bahasa: Dart
+### Build Release
 
-Database Lokal: Hive
+```bash
+# Android APK
+flutter build apk --release
 
-Manajemen State: Provider & State Management lokal (StatefulWidget)
+# Android App Bundle
+flutter build appbundle --release
 
-Pembuatan PDF: pdf & printing
+# iOS
+flutter build ios --release
+```
 
-Pemilih Gambar: image_picker
+---
 
-Notifikasi: top_snackbar_flutter
+## 📂 Arsitektur Proyek
 
-Ikon Aplikasi: flutter_launcher_icons
-
-Format Tanggal: intl
-
-🚀 Cara Menjalankan Proyek
-Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah berikut:
-
-1. Prasyarat
-
-Pastikan Anda sudah menginstal Flutter SDK di komputer Anda.
-
-Sebuah emulator Android atau iOS, atau perangkat fisik.
-
-2. Clone Repositori
-
-git clone https://github.com/[NamaUsernameAnda]/surga_tani.git
-cd surga_tani
-
-3. Instal Dependensi
-Jalankan perintah ini untuk mengunduh semua package yang dibutuhkan.
-
-flutter pub get
-
-4. Generate File untuk Hive
-Aplikasi ini menggunakan build_runner untuk men-generate adapter Hive. Jalankan perintah ini:
-
-dart run build_runner build --delete-conflicting-outputs
-
-5. Jalankan Aplikasi
-Hubungkan perangkat atau jalankan emulator, lalu jalankan perintah:
-
-flutter run
-
-📂 Struktur Proyek
-Proyek ini disusun dengan arsitektur modular untuk memisahkan setiap kategori dengan rapi.
-
+```
 lib/
-├── models/         # Berisi semua model data Hive untuk setiap kategori
-├── providers/      # State management (khusus untuk form Tanaman Pangan)
-├── screens/        # Berisi semua file UI (halaman)
-│   ├── home_screen.dart          # Halaman Dashboard Utama
-│   ├── record_list_screen.dart   # Halaman generik untuk daftar riwayat
-│   ├── form_[kategori]_screen.dart  # Form input untuk setiap kategori
-│   └── detail_[kategori]_screen.dart # Halaman detail & edit untuk setiap kategori
-├── services/       # Logika bisnis (seperti PdfService)
-├── utils/          # Tema aplikasi, konstanta, dll.
-└── main.dart       # Titik masuk utama aplikasi
+├── 📁 models/                    # Data models & Hive adapters
+│   ├── tanaman_pangan_model.dart
+│   ├── hortikultura_model.dart
+│   ├── peternakan_model.dart
+│   └── perkebunan_model.dart
+├── 📁 providers/                 # State management
+│   └── form_provider.dart
+├── 📁 screens/                   # UI Screens
+│   ├── 🏠 home_screen.dart
+│   ├── 📋 record_list_screen.dart
+│   ├── 📝 form_screens/
+│   └── 🔍 detail_screens/
+├── 📁 services/                  # Business logic
+│   ├── pdf_service.dart
+│   ├── database_service.dart
+│   └── image_service.dart
+├── 📁 utils/                     # Utilities & constants
+│   ├── theme.dart
+│   ├── constants.dart
+│   └── helpers.dart
+├── 📁 widgets/                   # Reusable components
+└── 📄 main.dart                  # Entry point
+```
 
-🤝 Kontribusi
-Kontribusi untuk pengembangan proyek ini sangat kami hargai. Jika Anda ingin berkontribusi, silakan lakukan fork pada repositori ini dan buat pull request untuk setiap perubahan yang Anda usulkan.
+---
 
-Fork repositori ini.
+## 🤝 Contributing
 
-Buat branch baru (git checkout -b fitur/FiturBaru).
+Kami sangat menghargai kontribusi dari komunitas! Berikut cara berkontribusi:
 
-Commit perubahan Anda (git commit -m 'Menambahkan FiturBaru').
+1. **Fork** repository ini
+2. **Create** feature branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** perubahan (`git commit -m 'Add: Amazing Feature'`)
+4. **Push** ke branch (`git push origin feature/AmazingFeature`)
+5. **Open** Pull Request
 
-Push ke branch Anda (git push origin fitur/FiturBaru).
+### Development Guidelines
+- Ikuti [Flutter Style Guide](https://dart.dev/guides/language/effective-dart/style)
+- Pastikan semua test pass sebelum submit PR
+- Sertakan dokumentasi untuk fitur baru
+- Update CHANGELOG.md untuk perubahan signifikan
 
-Buka sebuah Pull Request.
+---
 
-📄 Hak Cipta & Lisensi
-Hak Cipta © 2025, [Nama Anda atau Nama Perusahaan Anda].
+## 📋 Roadmap
 
-Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file LICENSE untuk detail lebih lanjut.
+- [ ] **v2.0** - Cloud sync & multi-user support
+- [ ] **v2.1** - Advanced analytics & reporting
+- [ ] **v2.2** - API integration untuk data nasional
+- [ ] **v2.3** - Machine learning price prediction
+- [ ] **v2.4** - Real-time collaboration tools
+
+---
+
+## 📄 License
+
+Proyek ini dilisensikan di bawah **MIT License**. Lihat [LICENSE](LICENSE) untuk detail lengkap.
+
+---
+
+## 👥 Tim Pengembang
+
+<p align="center">
+  <strong>Dikembangkan dengan ❤️ untuk kemajuan pertanian Indonesia</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/[username]">
+    <img src="https://img.shields.io/badge/GitHub-Follow-black?style=social&logo=github" alt="GitHub">
+  </a>
+  <a href="mailto:contact@example.com">
+    <img src="https://img.shields.io/badge/Email-Contact-red?style=social&logo=gmail" alt="Email">
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <sub>© 2025 SURGA TANI. All rights reserved.</sub>
+</p>
